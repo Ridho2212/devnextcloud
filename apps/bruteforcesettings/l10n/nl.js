@@ -1,0 +1,17 @@
+OC.L10N.register(
+    "bruteforcesettings",
+    {
+    "Brute-force settings" : "Bruteforce instellingen",
+    "Whitelist IPs" : "Whitelist IPs",
+    "Brute-force protection is meant to protect Nextcloud servers from attempts to\nguess account passwords in various ways. Besides the obvious \"*let's try a big\nlist of commonly used passwords*\" attack, it also makes it harder to use\nslightly more sophisticated attacks via the reset password form or trying to\nfind app password tokens.\n\nIf triggered, brute-force protection makes requests coming from an IP on a\nbrute-force protected controller with the same API slower for a 24 hour period.\n\nWith this app, the admin can exempt an IP address or range from this\nprotection which can be useful for testing purposes or when there are false\npositives due to a lot of accounts on one IP address." : "Brute-force bescherming is bedoeld om Nextcloud-servers te beschermen tegen pogingen om accountwachtwoorden op verschillende manieren te raden. Naast de voor de hand liggende aanval à la \"*laten we een grote lijst met veelgebruikte wachtwoorden *\" proberen, maakt het het ook moeilijker om iets geavanceerdere aanvallen te gebruiken via het resetwachtwoordformulier of om app-wachtwoordtokens te vinden.\n\nIndien geactiveerd, zorgt brute-force-bescherming ervoor dat verzoeken afkomstig van een IP op een brute-force beschermde controller met dezelfde API gedurende een periode van 24 uur langzamer zijn.\n\nMet deze app kan de beheerder een IP-adres of bereik vrijstellen van deze bescherming, wat nuttig kan zijn voor testdoeleinden of wanneer er valse positieven zijn vanwege veel accounts op één IP-adres.",
+    "Your remote address was identified as \"{remoteAddress}\" and is throttled at the moment by {delay}ms." : "Jouw adres op afstand werd geïdentificeerd als \"{remoteAddress}\" en wordt momenteel gereguleerd met een vertraging van {delay}ms.",
+    "Your remote address was identified as \"{remoteAddress}\" and is bypassing brute-force protection." : "Jouw adres op afstand werd geïdentificeerd als \"{remoteAddress}\" en omzeilt brute-force bescherming.",
+    "Your remote address was identified as \"{remoteAddress}\" and is not actively throttled at the moment." : "Jouw adres op afstand werd geïdentificeerd als \"{remoteAddress}\" en wordt momenteel niet actief gereguleerd.",
+    "IP address" : "IP-adres",
+    "Mask" : "Masker",
+    "Comment" : "Notitie",
+    "Add" : "Toevoegen",
+    "Save" : "Opslaan",
+    "Delete entry for {subnet}" : "Invoer verwijderen voor {subnet}"
+},
+"nplurals=2; plural=(n != 1);");

@@ -1,0 +1,405 @@
+snapshot @ 2026-01-29 16:40:46 WIB
+================================================================================
+Hostname             : AOPH1PAPPDC
+OS                   : SUSE Linux Enterprise Server 15 SP3
+Uptime               : 14 days 4 hours 45 minutes
+vCPU                 : 28
+IP address           : eth0=10.14.55.78
+Logged-in            : 3 user(s), 5 session(s)
+================================================================================
+Metrics:
+  - CPU usage         : 5.21% used, 94.79% idle
+  - Load (15m)        : L15=3.45, vCPU=28, r=0.12 | LA 2.94/2.85/3.45 | Status=OK
+  - Memory            : used 66.0G (54.2%), free 49.2G / 121.7G | Status=OK
+  - Swap IO           : si/so 0/0 p/s | Status=OK
+  - Total WP Running : 2
+  - Total WP Standby : 131
+  - Total WP Critical: 1
+  - Total WP OK      : 59
+  - Total WP Dialog  : 28
+  - Total WP BTC     : 26
+  - Total WP UPD     : 3
+================================================================================
+
+## WP-SCOUT @ AOPH1PAPPDC  SID=AOP  INSTS=30  TS=2026-01-29 16:40:51 WIB
+
+CPU Tertinggi
+Description : diurutkan berdasarkan CPU(%), menurun; tiebreak: RSS(GB) & AGE.
+PID     INST  WP   TYPE  CPU(%)     MEM RSS(GB) STATE   AGE          RABAX   SXPG    JOB  RXMSG CLASS    SID    TYPE   ABAP Program               ErrorCode              JobName                      LOG
+110663  30    95   DIA     11.6   3.37G    3.37 R       55m              0     10      0      0 WARN     AOP    DIA    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER /IWXBE/CLEAN_UP_LOGS         /usr/sap/AOP/D30/work/dev_w95
+28622   30    96   DIA      9.6   3.97G    3.97 S       1d2h             0      2      0      0 WARN     AOP    DIA    SAPLORFC                   CALL_FUNCTION_SEND_ERR ZFI_D_CN_SAP_AUTO            /usr/sap/AOP/D30/work/dev_w96
+67787   30    108  DIA      7.9   3.50G    3.50 S       1h57m            0      6      0      0 WARN     AOP    DIA    ZFARR_INV_LIST_REPORT      TIME_OUT               R_JR_BTCJOBS_GENERATOR       /usr/sap/AOP/D30/work/dev_w108
+17292   30    64   BTC      6.6   5.38G    5.38 S       13d10h           0     27     19      0 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER R_JR_BTCJOBS_GENERATOR       /usr/sap/AOP/D30/work/dev_w64
+115195  30    88   DIA      5.6   4.00G    4.00 S       5d19h            0      9     24      0 OK       AOP    DIA    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZMM_H_INTF_ALLOC_RET         /usr/sap/AOP/D30/work/dev_w88
+103668  30    110  DIA      5.2   2.91G    2.91 S       1h6m             0     11      0      0 OK       AOP    DIA    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D30/work/dev_w110
+75511   30    101  DIA      5.2   4.22G    4.22 S       1d17h            0      1      0      0 WARN     AOP    DIA    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D30/work/dev_w101
+8775    30    83   ?        4.9   3.49G    3.49 S       14d4h           18      8     17     18 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZMM_HD_INV_MOVEMENT_SUM1021_ /usr/sap/AOP/D30/work/dev_w83
+91538   30    119  BTC      4.4   2.89G    2.89 S       1h21m            0      5      0      0 OK       AOP    BTC    SAPLORFC                   CALL_FUNCTION_SEND_ERR R_JR_BTCJOBS_GENERATOR       /usr/sap/AOP/D30/work/dev_w119
+15173   30    107  DIA      4.3   4.34G    4.34 S       23h22m           0      0      0      0 WARN     AOP    DIA    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D30/work/dev_w107
+
+Memory Tertinggi (RSS)
+Description : diurutkan berdasarkan RSS(GB), menurun; tiebreak: CPU(%).
+PID     INST  WP   TYPE  CPU(%)     MEM RSS(GB) STATE   AGE          RABAX   SXPG    JOB  RXMSG CLASS    SID    TYPE   ABAP Program               ErrorCode              JobName                      LOG
+8751    30    59   BTC      1.0   5.63G    5.63 S       14d4h            0      6      4      0 CRIT     AOP    BTC    ?                          ?                      RK_PKOSA_MULTI_CREATE        /usr/sap/AOP/D30/work/dev_w59
+8748    30    56   BTC      1.4   5.48G    5.48 S       14d4h            0     23      2      0 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_MN_SOIDMS                /usr/sap/AOP/D30/work/dev_w56
+17292   30    64   BTC      6.6   5.38G    5.38 S       13d10h           0     27     19      0 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER R_JR_BTCJOBS_GENERATOR       /usr/sap/AOP/D30/work/dev_w64
+8772    30    80   ?        2.9   5.19G    5.19 S       14d4h           85      5      7      0 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZMM_HD_INV_MOVEMENT_SUM1022_ /usr/sap/AOP/D30/work/dev_w80
+832     30    55   BTC      2.6   5.13G    5.13 S       14d0h            0      6     13      0 WARN     AOP    BTC    ?                          ?                      ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D30/work/dev_w55
+8782    30    90   DIA      3.0   4.90G    4.90 S       14d4h           14     30     15     14 WARN     AOP    DIA    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_H_WMP_UPL_POST_SLS       /usr/sap/AOP/D30/work/dev_w90
+8768    30    76   ?        1.8   4.84G    4.84 S       14d4h           14     25     11     14 WARN     AOP    ?      ZVCMR_H2H_CREDIT_LIMIT     IMPORT_WRONG_END_POS   ZMM_HD_INV_MOVEMENT_DET1021_ /usr/sap/AOP/D30/work/dev_w76
+8766    30    74   ?        2.6   4.51G    4.51 S       14d4h           28      4      1     28 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZMM_H_INBOUND_AOE_POR        /usr/sap/AOP/D30/work/dev_w74
+15173   30    107  DIA      4.3   4.34G    4.34 S       23h22m           0      0      0      0 WARN     AOP    DIA    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D30/work/dev_w107
+75511   30    101  DIA      5.2   4.22G    4.22 S       1d17h            0      1      0      0 WARN     AOP    DIA    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D30/work/dev_w101
+
+Running Terlama
+Description : diurutkan berdasarkan AGE (durasi hidup WP), menurun.
+PID     INST  WP   TYPE  CPU(%)     MEM RSS(GB) STATE   AGE          RABAX   SXPG    JOB  RXMSG CLASS    SID    TYPE   ABAP Program               ErrorCode              JobName                      LOG
+8733    30    42   BTC      0.2   3.55G    3.55 S       14d4h            0      0      4      0 WARN     AOP    BTC    ZVCMR_H2H_CREDIT_LIMIT     IMPORT_WRONG_END_POS   R_JR_BTCJOBS_GENERATOR       /usr/sap/AOP/D30/work/dev_w42
+8736    30    45   BTC      0.6   3.83G    3.83 S       14d4h            0      0      0      0 WARN     AOP    BTC    ?                          ?                      ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D30/work/dev_w45
+8740    30    49   BTC      0.2   3.82G    3.82 S       14d4h            0      8      2      0 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZFI_D_PRT_OUT_CLR_CUR_FLEET  /usr/sap/AOP/D30/work/dev_w49
+8741    30    50   BTC      0.6   3.71G    3.71 S       14d4h            0      1      3      0 WARN     AOP    BTC    ZMIME_DRP_REPLENISHMENT_EW DBSQL_DUPLICATE_KEY_ER ZSD_H_UPLOAD_CBD_B2B_SFA     /usr/sap/AOP/D30/work/dev_w50
+8742    30    51   BTC      0.3   4.05G    4.05 S       14d4h            0      3      3      0 WARN     AOP    BTC    ?                          ?                      ZMIM_INV_CONTROL_IKP_D       /usr/sap/AOP/D30/work/dev_w51
+8748    30    56   BTC      1.4   5.48G    5.48 S       14d4h            0     23      2      0 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_MN_SOIDMS                /usr/sap/AOP/D30/work/dev_w56
+8751    30    59   BTC      1.0   5.63G    5.63 S       14d4h            0      6      4      0 CRIT     AOP    BTC    ?                          ?                      RK_PKOSA_MULTI_CREATE        /usr/sap/AOP/D30/work/dev_w59
+8757    30    65   ?        0.0   1.39G    1.39 S       14d4h            0      0      0      0 WARN     AOP    ?      ?                          ?                      ?                            /usr/sap/AOP/D30/work/dev_w65
+8758    30    66   ?        0.0   1.26G    1.26 S       14d4h            0      0      0      0 WARN     AOP    ?      ?                          ?                      ?                            /usr/sap/AOP/D30/work/dev_w66
+8759    30    67   ?        0.0   1.52G    1.52 S       14d4h            0      0      0      0 WARN     AOP    ?      ?                          ?                      ?                            /usr/sap/AOP/D30/work/dev_w67
+
+RABAX Terbanyak
+Description : diurutkan berdasarkan jumlah RABAX (desc), tiebreak SXPG (desc), JOB (desc).
+PID     INST  WP   TYPE    RABAX   SXPG  RXMSG    JOB CLASS  ABAP Program               ErrorCode              JobName                      LOG
+8772    30    80   ?          85      5      0      7 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZMM_HD_INV_MOVEMENT_SUM1022_ /usr/sap/AOP/D30/work/dev_w80
+8778    30    86   ?          42      7     42     15 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_MN_SOIDMS                /usr/sap/AOP/D30/work/dev_w86
+32217   30    89   DIA        41      6     41     30 OK     ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER R_JR_BTCJOBS_GENERATOR       /usr/sap/AOP/D30/work/dev_w89
+8769    30    77   ?          28     28     28      2 WARN   ZMIME_DRP_REPLENISHMENT_EW DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D30/work/dev_w77
+8767    30    75   ?          28     14     28      6 WARN   ?                          ?                      ZVSLE_UPDATE_GR_PUT_ALLOC    /usr/sap/AOP/D30/work/dev_w75
+8774    30    82   ?          28     11     28     27 WARN   ZMIME_DRP_REPLENISHMENT_EW DBSQL_DUPLICATE_KEY_ER ZMM_H_INTF_ALLOC_RET         /usr/sap/AOP/D30/work/dev_w82
+29767   30    100  DIA        28      7     28     35 OK     ZMPUE_OUTSTANDING_GR_LIST  SAPSQL_DATA_LOSS       ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D30/work/dev_w100
+8766    30    74   ?          28      4     28      1 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZMM_H_INBOUND_AOE_POR        /usr/sap/AOP/D30/work/dev_w74
+85216   30    87   ?          23     19     23     27 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D30/work/dev_w87
+8775    30    83   ?          18      8     18     17 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZMM_HD_INV_MOVEMENT_SUM1021_ /usr/sap/AOP/D30/work/dev_w83
+
+snapshot @ 2026-01-29 16:40:51 WIB
+================================================================================
+Hostname             : AOPH2PAPPDC
+OS                   : SUSE Linux Enterprise Server 15 SP3
+Uptime               : 14 days 4 hours 33 minutes
+vCPU                 : 28
+IP address           : eth0=10.14.55.79
+Logged-in            : 1 user(s), 1 session(s)
+================================================================================
+Metrics:
+  - CPU usage         : 7.91% used, 92.09% idle
+  - Load (15m)        : L15=2.26, vCPU=28, r=0.08 | LA 3.16/2.44/2.26 | Status=OK
+  - Memory            : used 63.0G (51.8%), free 31.3G / 121.7G | Status=OK
+  - Swap IO           : si/so 0/0 p/s | Status=OK
+  - Total WP Running : 2
+  - Total WP Standby : 131
+  - Total WP Critical: 4
+  - Total WP OK      : 48
+  - Total WP Dialog  : 27
+  - Total WP BTC     : 25
+  - Total WP UPD     : 3
+================================================================================
+
+## WP-SCOUT @ AOPH2PAPPDC  SID=AOP  INSTS=40  TS=2026-01-29 16:40:58 WIB
+
+CPU Tertinggi
+Description : diurutkan berdasarkan CPU(%), menurun; tiebreak: RSS(GB) & AGE.
+PID     INST  WP   TYPE  CPU(%)     MEM RSS(GB) STATE   AGE          RABAX   SXPG    JOB  RXMSG CLASS    SID    TYPE   ABAP Program               ErrorCode              JobName                      LOG
+24961   40    113  DIA     14.5    891M    0.87 S       24s              0      0      0      0 CRIT     AOP    DIA    /SPE/SAPLCROSS_DLVRY_HU    POSTING_ILLEGAL_STATEM ZSD_MN_SOIDMS                /usr/sap/AOP/D40/work/dev_w113
+22379   40    107  DIA     12.9   3.03G    3.03 S       6m               0      2      0      0 CRIT     AOP    DIA    ZFARR_APPROVAL_CREDIT_LIMI CONVT_OVERFLOW         SAPMZMIM_GENR_INBOUNDDEL     /usr/sap/AOP/D40/work/dev_w107
+7721    40    99   DIA     11.8   2.91G    2.91 S       20m              0      1      0      0 WARN     AOP    DIA    SAPDM06Q                   DYNPRO_FIELD_CONVERSIO ZHR_D_OB_POWERPLUS_EMP_AWP   /usr/sap/AOP/D40/work/dev_w99
+16717   40    63   BTC      7.9   4.75G    4.75 S       9d23h            0      1      6      0 WARN     AOP    BTC    SAPLORFC                   CALL_FUNCTION_SEND_ERR ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D40/work/dev_w63
+62750   40    97   DIA      7.3   3.80G    3.80 S       1d1h             0     14     48      0 WARN     AOP    DIA    SAPLORFC                   CALL_FUNCTION_SEND_ERR ZMM_H_INBOUND_MRS_TPO        /usr/sap/AOP/D40/work/dev_w97
+15880   40    116  DIA      6.3   3.89G    3.89 S       11m              0      0      0      0 WARN     AOP    DIA    SAPLORFC                   CALL_FUNCTION_SEND_ERR ZMM_H_INBOUND_MRS_PRR        /usr/sap/AOP/D40/work/dev_w116
+24159   40    111  DIA      6.2   1.70G    1.70 S       2m               0      0      0      0 WARN     AOP    DIA    ZMPUE_OUTSTANDING_GR_LIST2 TABLE_INVALID_INDEX    ZSD_H_WMP_UPL_POST_SLS       /usr/sap/AOP/D40/work/dev_w111
+68230   40    114  DIA      5.2   4.49G    4.49 S       1h41m            0      0      0      0 WARN     AOP    DIA    SAPLZVSLT_B2B_ODR          TSV_TNEW_PAGE_ALLOC_FA ZMM_HD_INV_MOVEMENT_SUM1401_ /usr/sap/AOP/D40/work/dev_w114
+57444   40    39   ?        4.9   3.28G    3.28 S       1h55m            0      0      0      0 OK       AOP    ?      /SPE/SAPLCROSS_DLVRY_HU    POSTING_ILLEGAL_STATEM ?                            /usr/sap/AOP/D40/work/dev_w39
+110383  40    98   DIA      4.0   3.57G    3.57 S       53m              0      0      0      0 OK       AOP    DIA    SAPLORFC                   CALL_FUNCTION_SEND_ERR ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D40/work/dev_w98
+
+Memory Tertinggi (RSS)
+Description : diurutkan berdasarkan RSS(GB), menurun; tiebreak: CPU(%).
+PID     INST  WP   TYPE  CPU(%)     MEM RSS(GB) STATE   AGE          RABAX   SXPG    JOB  RXMSG CLASS    SID    TYPE   ABAP Program               ErrorCode              JobName                      LOG
+18966   40    24   ?        0.6   7.72G    7.72 S       20h32m           0      0      0      0 CRIT     AOP    ?      ZCL_LOP_SO_CATEGORY2====== AMDP_VERSION_MISMATCH  ?                            /usr/sap/AOP/D40/work/dev_w24
+6683    40    49   BTC      0.1   5.93G    5.93 S       14d4h           85      1      2      0 CRIT     AOP    BTC    ZCL_TRD_VENDOR_DELIVERY_OU DBSQL_DUPLICATE_KEY_ER ZSD_MN_SOIDMS                /usr/sap/AOP/D40/work/dev_w49
+6725    40    90   ?        1.9   4.85G    4.85 S       14d4h           14     27     26     14 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER SATC_WATCHDOG                /usr/sap/AOP/D40/work/dev_w90
+103025  40    91   DIA      1.4   4.84G    4.84 S       6h9m             0      0      0      0 WARN     AOP    DIA    ZVBIR_INQUIRY_LIST_V2      TIME_OUT               ZPP_H_MASSGR_ERROR_VIN       /usr/sap/AOP/D40/work/dev_w91
+6711    40    76   ?        1.4   4.76G    4.76 S       14d4h            0      8     10      0 WARN     AOP    ?      ZCL_TRD_VENDOR_DELIVERY_OU DBSQL_DUPLICATE_KEY_ER Z_D_INV_CTRL_1201_02         /usr/sap/AOP/D40/work/dev_w76
+16717   40    63   BTC      7.9   4.75G    4.75 S       9d23h            0      1      6      0 WARN     AOP    BTC    SAPLORFC                   CALL_FUNCTION_SEND_ERR ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D40/work/dev_w63
+6707    40    73   ?        1.1   4.73G    4.73 S       14d4h            0      3     19      0 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER RM07MLBB                     /usr/sap/AOP/D40/work/dev_w73
+79034   40    57   BTC      0.7   4.72G    4.72 S       13d23h           0      2      2      0 WARN     AOP    BTC    SAPMZMPU_LT_GI_PTV         DBSQL_DUPLICATE_KEY_ER ZSD_MN_SOIDMS                /usr/sap/AOP/D40/work/dev_w57
+86097   40    96   DIA      3.6   4.68G    4.68 S       3h53m            0      6      0      0 WARN     AOP    DIA    /SPE/SAPLCROSS_DLVRY_HU    POSTING_ILLEGAL_STATEM ZSD_AD_RLB_RETAIL_1507       /usr/sap/AOP/D40/work/dev_w96
+1171    40    10   ?        0.3   4.60G    4.60 S       3d0h             0      4      0      0 WARN     AOP    ?      ?                          ?                      ?                            /usr/sap/AOP/D40/work/dev_w10
+
+Running Terlama
+Description : diurutkan berdasarkan AGE (durasi hidup WP), menurun.
+PID     INST  WP   TYPE  CPU(%)     MEM RSS(GB) STATE   AGE          RABAX   SXPG    JOB  RXMSG CLASS    SID    TYPE   ABAP Program               ErrorCode              JobName                      LOG
+6675    40    41   BTC      0.0   3.71G    3.71 S       14d4h            0      0      0      0 WARN     AOP    BTC    ?                          ?                      ZSD_MN_SOIDMS                /usr/sap/AOP/D40/work/dev_w41
+6676    40    42   BTC      0.0   4.00G    4.00 S       14d4h            0      0      1      0 WARN     AOP    BTC    ?                          ?                      ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D40/work/dev_w42
+6677    40    43   BTC      0.1   4.33G    4.33 S       14d4h            0      0      0      0 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_H_IFI_Z_UPD_AOPWEBRPLNS_ /usr/sap/AOP/D40/work/dev_w43
+6678    40    44   BTC      0.4   3.97G    3.97 S       14d4h            0      2      1      0 WARN     AOP    BTC    ?                          ?                      ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D40/work/dev_w44
+6679    40    45   BTC      0.1   4.10G    4.10 S       14d4h            0      0      1      0 WARN     AOP    BTC    ?                          ?                      ZSD_H_IFI_Z_UPD_AOPWEBRPLNS_ /usr/sap/AOP/D40/work/dev_w45
+6681    40    47   BTC      0.1   3.78G    3.78 S       14d4h            0      1      0      0 WARN     AOP    BTC    ?                          ?                      ZPP_H_MASSGR_VIN             /usr/sap/AOP/D40/work/dev_w47
+6682    40    48   BTC      0.1   4.04G    4.04 S       14d4h            0     25      0      0 WARN     AOP    BTC    ?                          ?                      ZSD_H_WMP_UPL_POST_SLS       /usr/sap/AOP/D40/work/dev_w48
+6683    40    49   BTC      0.1   5.93G    5.93 S       14d4h           85      1      2      0 CRIT     AOP    BTC    ZCL_TRD_VENDOR_DELIVERY_OU DBSQL_DUPLICATE_KEY_ER ZSD_MN_SOIDMS                /usr/sap/AOP/D40/work/dev_w49
+6684    40    50   BTC      1.6   3.68G    3.68 S       14d4h            0      1      1      0 WARN     AOP    BTC    ?                          ?                      ZSD_MN_SOIDMS                /usr/sap/AOP/D40/work/dev_w50
+6685    40    51   BTC      0.1   4.04G    4.04 S       14d4h            0      2      4      0 WARN     AOP    BTC    ?                          ?                      ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D40/work/dev_w51
+
+RABAX Terbanyak
+Description : diurutkan berdasarkan jumlah RABAX (desc), tiebreak SXPG (desc), JOB (desc).
+PID     INST  WP   TYPE    RABAX   SXPG  RXMSG    JOB CLASS  ABAP Program               ErrorCode              JobName                      LOG
+6724    40    89   ?          85      1      0     29 WARN   ZLOBE_AFTER_CONFIRM        DBSQL_SQL_DEADLOCK_DET Z_D_COGI_1201                /usr/sap/AOP/D40/work/dev_w89
+6683    40    49   BTC        85      1      0      2 CRIT   ZCL_TRD_VENDOR_DELIVERY_OU DBSQL_DUPLICATE_KEY_ER ZSD_MN_SOIDMS                /usr/sap/AOP/D40/work/dev_w49
+6708    40    74   ?          85      0      0      0 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_AD_AOE_BILL_DOM          /usr/sap/AOP/D40/work/dev_w74
+6712    40    77   ?          19      6     19     14 WARN   CL_SALV_COLUMNS=========== UNCAUGHT_EXCEPTION     ZSD_H_CBD_PENDING            /usr/sap/AOP/D40/work/dev_w77
+6714    40    79   ?          14     33     14     18 WARN   ?                          ?                      ZPP_H_MASSGR_VIN             /usr/sap/AOP/D40/work/dev_w79
+6720    40    85   ?          14     31     14     22 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_H_CBD_PENDING            /usr/sap/AOP/D40/work/dev_w85
+6715    40    80   ?          14     29     14     12 WARN   ZVCMR_H2H_CREDIT_LIMIT     IMPORT_WRONG_END_POS   ZSD_MN_SOIDMS                /usr/sap/AOP/D40/work/dev_w80
+6725    40    90   ?          14     27     14     26 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER SATC_WATCHDOG                /usr/sap/AOP/D40/work/dev_w90
+63248   40    60   BTC        14     12     14      3 WARN   ZCL_TRD_VENDOR_DELIVERY_OU DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D40/work/dev_w60
+6718    40    83   ?          14     11     14     40 WARN   ?                          ?                      ZFI_D_PRT_OUT_OPEN_TDY_1000  /usr/sap/AOP/D40/work/dev_w83
+
+snapshot @ 2026-01-29 16:41:00 WIB
+================================================================================
+Hostname             : AOPH3PAPPDC
+OS                   : SUSE Linux Enterprise Server 15 SP3
+Uptime               : 14 days 4 hours 28 minutes
+vCPU                 : 28
+IP address           : eth0=10.14.55.81
+Logged-in            : 1 user(s), 1 session(s)
+================================================================================
+Metrics:
+  - CPU usage         : 13.14% used, 86.86% idle
+  - Load (15m)        : L15=5.04, vCPU=28, r=0.18 | LA 3.73/4.31/5.04 | Status=OK
+  - Memory            : used 56.6G (46.5%), free 52.7G / 121.7G | Status=OK
+  - Swap IO           : si/so 0/0 p/s | Status=OK
+  - Total WP Running : 2
+  - Total WP Standby : 133
+  - Total WP Critical: 0
+  - Total WP OK      : 76
+  - Total WP Dialog  : 30
+  - Total WP BTC     : 25
+  - Total WP UPD     : 3
+================================================================================
+
+## WP-SCOUT @ AOPH3PAPPDC  SID=AOP  INSTS=50  TS=2026-01-29 16:41:08 WIB
+
+CPU Tertinggi
+Description : diurutkan berdasarkan CPU(%), menurun; tiebreak: RSS(GB) & AGE.
+PID     INST  WP   TYPE  CPU(%)     MEM RSS(GB) STATE   AGE          RABAX   SXPG    JOB  RXMSG CLASS    SID    TYPE   ABAP Program               ErrorCode              JobName                      LOG
+91439   50    64   BTC     11.0   2.21G    2.21 S       13d10h          52      0     30     52 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_H_POST_CBD_B2B_SFA_FREES /usr/sap/AOP/D50/work/dev_w64
+86981   50    116  DIA     10.5   3.12G    3.12 S       1d1h            14      0      6     14 WARN     AOP    DIA    ZMPUE_OUTSTANDING_GR_LIST  SAPSQL_DATA_LOSS       ZSD_H_INBOUND_RETUR_ALLOC_AP /usr/sap/AOP/D50/work/dev_w116
+4173    50    17   ?        9.1   2.93G    2.93 S       59m              0      4      0      0 WARN     AOP    ?      SAPLORFC                   CALL_FUNCTION_SEND_ERR ?                            /usr/sap/AOP/D50/work/dev_w17
+9078    50    92   DIA      6.6   2.57G    2.57 S       1d23h           42      1     35     42 WARN     AOP    DIA    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D50/work/dev_w92
+5562    50    89   ?        6.3   3.01G    3.01 S       14d4h           42      1     33     42 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_MN_INBOUND_CUS_B2C       /usr/sap/AOP/D50/work/dev_w89
+5558    50    85   ?        6.1   4.02G    4.02 R       14d4h           46     27      6     46 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_H_INBOUND_RETUR_ALLOC_AP /usr/sap/AOP/D50/work/dev_w85
+119450  50    72   ?        5.6   3.91G    3.91 R       6d1h            34      0      0     34 OK       AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_H_POST_CBD_B2B_SFA_FREES /usr/sap/AOP/D50/work/dev_w72
+119452  50    77   ?        5.5   1.88G    1.88 S       6d1h            25      4     32     25 OK       AOP    ?      ?                          ?                      SXCO_TRC_DELETE_TRACES       /usr/sap/AOP/D50/work/dev_w77
+32021   50    114  DIA      5.4   2.69G    2.69 S       12m              0      0      0      0 OK       AOP    DIA    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_H_INBOUND_RETUR_ALLOC_AP /usr/sap/AOP/D50/work/dev_w114
+115215  50    38   ?        4.7   3.12G    3.12 S       1h29m            0     18      0      0 OK       AOP    ?      SAPMV50A                   MEMORY_NO_MORE_PAGING  ?                            /usr/sap/AOP/D50/work/dev_w38
+
+Memory Tertinggi (RSS)
+Description : diurutkan berdasarkan RSS(GB), menurun; tiebreak: CPU(%).
+PID     INST  WP   TYPE  CPU(%)     MEM RSS(GB) STATE   AGE          RABAX   SXPG    JOB  RXMSG CLASS    SID    TYPE   ABAP Program               ErrorCode              JobName                      LOG
+83830   50    101  DIA      1.3   4.42G    4.42 S       8h59m            0      0      0      0 WARN     AOP    DIA    SAPLORFC                   CALL_FUNCTION_SEND_ERR ZSD_H_IFI_Z_UPD_AOPWEBRPLNS_ /usr/sap/AOP/D50/work/dev_w101
+11524   50    117  DIA      2.7   4.40G    4.40 S       4h7m             0      0      0      0 WARN     AOP    DIA    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_H_INBOUND_RETUR_ALLOC_AP /usr/sap/AOP/D50/work/dev_w117
+77426   50    39   ?        1.0   4.36G    4.36 S       16h0m            0      0      0      0 WARN     AOP    ?      ?                          ?                      ?                            /usr/sap/AOP/D50/work/dev_w39
+65116   50    105  DIA      2.3   4.18G    4.18 S       6h5m             0      0      0      0 WARN     AOP    DIA    ZVSLI_PAYMENT_REQUEST      CALL_FUNCTION_CONFLICT ZFI_D_PRT_INB_MIRO_SSC       /usr/sap/AOP/D50/work/dev_w105
+31943   50    115  DIA      1.7   4.05G    4.05 S       6h57m            0     11      0      0 WARN     AOP    DIA    RFLQ_ASSIGN_REL            SYSTEM_ABAP_ACCESS_DEN ZFI_D_PRT_INB_MIRO_SSC       /usr/sap/AOP/D50/work/dev_w115
+5558    50    85   ?        6.1   4.02G    4.02 R       14d4h           46     27      6     46 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_H_INBOUND_RETUR_ALLOC_AP /usr/sap/AOP/D50/work/dev_w85
+119450  50    72   ?        5.6   3.91G    3.91 R       6d1h            34      0      0     34 OK       AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_H_POST_CBD_B2B_SFA_FREES /usr/sap/AOP/D50/work/dev_w72
+26045   50    103  DIA      1.5   3.78G    3.78 S       7h5m             0      9      0      0 OK       AOP    DIA    ZFARR_INV_LIST_REPORT      TIME_OUT               ZFI_D_PRT_INB_MIRO_SSC       /usr/sap/AOP/D50/work/dev_w103
+58639   50    35   ?        0.8   3.76G    3.76 S       9h37m            0      0      0      0 OK       AOP    ?      ZCL_IM_EI_MIM_MIGO_BADI=== DYNPRO_MSG_IN_HELP     ?                            /usr/sap/AOP/D50/work/dev_w35
+77027   50    36   ?        2.8   3.76G    3.76 S       2h23m            0      1      0      0 OK       AOP    ?      /SPE/SAPLCROSS_DLVRY_HU    POSTING_ILLEGAL_STATEM ?                            /usr/sap/AOP/D50/work/dev_w36
+
+Running Terlama
+Description : diurutkan berdasarkan AGE (durasi hidup WP), menurun.
+PID     INST  WP   TYPE  CPU(%)     MEM RSS(GB) STATE   AGE          RABAX   SXPG    JOB  RXMSG CLASS    SID    TYPE   ABAP Program               ErrorCode              JobName                      LOG
+5514    50    41   BTC      0.5   1.21G    1.21 S       14d4h            0      3      2      0 WARN     AOP    BTC    ZMPUE_OUTSTANDING_GR_LIST  SAPSQL_DATA_LOSS       ZSD_MN_SOIDMS                /usr/sap/AOP/D50/work/dev_w41
+5516    50    43   BTC      0.8    983M    0.96 S       14d4h           14      0     10     14 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER R_JR_BTCJOBS_GENERATOR       /usr/sap/AOP/D50/work/dev_w43
+5517    50    44   BTC      0.5   1.56G    1.56 S       14d4h           14      0      5     14 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZBAS_D_OUT_API_IAM_SAP_LOGIN /usr/sap/AOP/D50/work/dev_w44
+5518    50    45   BTC      0.4   1.22G    1.22 S       14d4h            0      0      2      0 WARN     AOP    BTC    ?                          ?                      ZPP_H_REPROCESS_CONF_BKIT_CD /usr/sap/AOP/D50/work/dev_w45
+5519    50    46   BTC      0.3   1.26G    1.26 S       14d4h            0      1      6      0 WARN     AOP    BTC    ?                          ?                      ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D50/work/dev_w46
+5521    50    48   BTC      1.2   1.57G    1.57 S       14d4h           14      1      5     14 WARN     AOP    BTC    ?                          ?                      ZFI_D_PRT_OUT_OPEN_TDY       /usr/sap/AOP/D50/work/dev_w48
+5524    50    51   BTC      0.7   1.34G    1.34 S       14d4h           14      1     11     14 WARN     AOP    BTC    ZVCMR_H2H_CREDIT_LIMIT     IMPORT_WRONG_END_POS   ZFI_D_H2H_CREDITLIMIT        /usr/sap/AOP/D50/work/dev_w51
+5526    50    53   BTC      1.3   1.57G    1.57 S       14d4h            0      1      5      0 WARN     AOP    BTC    /SCWM/SAPLMON_REFRESH      CALL_FUNCTION_SEND_ERR ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D50/work/dev_w53
+5538    50    65   ?        0.0    993M    0.97 S       14d4h            0      0      0      0 WARN     AOP    ?      SAPLCOFW                   MESSAGE_TYPE_X         ?                            /usr/sap/AOP/D50/work/dev_w65
+5539    50    66   ?        0.0    727M    0.71 S       14d4h            0      0      0      0 WARN     AOP    ?      ?                          ?                      ?                            /usr/sap/AOP/D50/work/dev_w66
+
+RABAX Terbanyak
+Description : diurutkan berdasarkan jumlah RABAX (desc), tiebreak SXPG (desc), JOB (desc).
+PID     INST  WP   TYPE    RABAX   SXPG  RXMSG    JOB CLASS  ABAP Program               ErrorCode              JobName                      LOG
+119454  50    82   ?          70      1     70     16 OK     ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_MN_SOIDMS                /usr/sap/AOP/D50/work/dev_w82
+5557    50    84   ?          56      7     56     19 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZMM_HD_INV_MOVEMENT_DET1021_ /usr/sap/AOP/D50/work/dev_w84
+5559    50    86   ?          52      1     52     28 WARN   ZLOBE_AFTER_CONFIRM        DBSQL_SQL_DEADLOCK_DET ZSD_H_INBOUND_RETUR_ALLOC_AP /usr/sap/AOP/D50/work/dev_w86
+91439   50    64   BTC        52      0     52     30 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_H_POST_CBD_B2B_SFA_FREES /usr/sap/AOP/D50/work/dev_w64
+5558    50    85   ?          46     27     46      6 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_H_INBOUND_RETUR_ALLOC_AP /usr/sap/AOP/D50/work/dev_w85
+5553    50    80   ?          42      5     42     27 WARN   ?                          ?                      ZSD_MN_SOIDMS                /usr/sap/AOP/D50/work/dev_w80
+5546    50    73   ?          42      3     42     19 WARN   ?                          ?                      /IWNGW/DELETE_APPL_LOGS      /usr/sap/AOP/D50/work/dev_w73
+106656  50    61   BTC        42      2     42      6 WARN   ?                          ?                      ZFI_D_LOYALTYCARD            /usr/sap/AOP/D50/work/dev_w61
+9078    50    92   DIA        42      1     42     35 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D50/work/dev_w92
+4457    50    91   DIA        42      1     42     35 OK     ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZMM_HD_INV_MOVEMENT_SUM1301_ /usr/sap/AOP/D50/work/dev_w91
+
+snapshot @ 2026-01-29 16:41:09 WIB
+================================================================================
+Hostname             : AOPH4PAPPDC
+OS                   : SUSE Linux Enterprise Server 15 SP3
+Uptime               : 14 days 4 hours 27 minutes
+vCPU                 : 28
+IP address           : eth0=10.14.55.94
+Logged-in            : 1 user(s), 1 session(s)
+================================================================================
+Metrics:
+  - CPU usage         : 5.81% used, 94.19% idle
+  - Load (15m)        : L15=1.71, vCPU=28, r=0.06 | LA 1.40/1.47/1.71 | Status=OK
+  - Memory            : used 51.8G (42.6%), free 60.1G / 121.7G | Status=OK
+  - Swap IO           : si/so 0/0 p/s | Status=OK
+  - Total WP Running : 2
+  - Total WP Standby : 131
+  - Total WP Critical: 2
+  - Total WP OK      : 55
+  - Total WP Dialog  : 29
+  - Total WP BTC     : 27
+  - Total WP UPD     : 3
+================================================================================
+
+## WP-SCOUT @ AOPH4PAPPDC  SID=AOP  INSTS=60  TS=2026-01-29 16:41:15 WIB
+
+CPU Tertinggi
+Description : diurutkan berdasarkan CPU(%), menurun; tiebreak: RSS(GB) & AGE.
+PID     INST  WP   TYPE  CPU(%)     MEM RSS(GB) STATE   AGE          RABAX   SXPG    JOB  RXMSG CLASS    SID    TYPE   ABAP Program               ErrorCode              JobName                      LOG
+41987   60    64   BTC      7.1   4.50G    4.50 R       13d10h           0     24     40      0 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D60/work/dev_w64
+126043  60    115  DIA      3.6   3.52G    3.52 S       1h45m            0      3      0      0 OK       AOP    DIA    SAPMZMPU_LT_GI_PTV         DBSQL_DUPLICATE_KEY_ER ZSD_AD_RLB_RETAIL_1507       /usr/sap/AOP/D60/work/dev_w115
+5565    60    87   ?        3.5   3.56G    3.56 S       14d4h           14     33     24     14 WARN     AOP    ?      ?                          ?                      ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D60/work/dev_w87
+5566    60    88   ?        3.2   5.04G    5.04 S       14d4h           66      2     38      0 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D60/work/dev_w88
+5562    60    84   ?        2.8   3.85G    3.85 S       14d4h            0      4     32      0 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER SAP_ESH_QUERY_LOG_REORG      /usr/sap/AOP/D60/work/dev_w84
+91256   60    117  DIA      2.8   4.34G    4.34 S       5h30m            0     15      0      0 WARN     AOP    DIA    ZFGLI_PPH_EBUPOT           BCD_ZERODIVIDE         ZFI_D_PRT_INB_MIRO_SSC       /usr/sap/AOP/D60/work/dev_w117
+5557    60    79   ?        2.7   3.21G    3.21 S       14d4h            0      7     38      0 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D60/work/dev_w79
+32437   60    112  DIA      2.6   2.82G    2.82 S       56m              0      6      0      0 OK       AOP    DIA    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_H_INB_RETALLOC_POST_API  /usr/sap/AOP/D60/work/dev_w112
+81768   60    108  DIA      2.5   3.77G    3.77 S       2h45m            0     26      0      0 OK       AOP    DIA    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER SAPMZMIM_GENR_INBOUNDDEL     /usr/sap/AOP/D60/work/dev_w108
+5558    60    80   ?        2.4   4.66G    4.66 S       14d4h            0      4     40      0 WARN     AOP    ?      ?                          ?                      ZPP_D_MB51_Z_AWP_GI          /usr/sap/AOP/D60/work/dev_w80
+
+Memory Tertinggi (RSS)
+Description : diurutkan berdasarkan RSS(GB), menurun; tiebreak: CPU(%).
+PID     INST  WP   TYPE  CPU(%)     MEM RSS(GB) STATE   AGE          RABAX   SXPG    JOB  RXMSG CLASS    SID    TYPE   ABAP Program               ErrorCode              JobName                      LOG
+5536    60    58   BTC      0.8   5.84G    5.84 S       14d4h            0      5      1      0 CRIT     AOP    BTC    ?                          ?                      RSDRAFT_LIFECYCLE_MANAGER    /usr/sap/AOP/D60/work/dev_w58
+5524    60    46   BTC      0.6   5.69G    5.69 S       14d4h            0      1      5      0 CRIT     AOP    BTC    ?                          ?                      SAPMZMIM_GENR_INBOUNDDEL     /usr/sap/AOP/D60/work/dev_w46
+5564    60    86   ?        1.6   5.29G    5.29 S       14d4h            0     33     32      0 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZBAS_D_OUT_API_IAM_SAP_LOGIN /usr/sap/AOP/D60/work/dev_w86
+5566    60    88   ?        3.2   5.04G    5.04 S       14d4h           66      2     38      0 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D60/work/dev_w88
+5537    60    59   BTC      0.7   5.00G    5.00 S       14d4h            5      2      5      5 WARN     AOP    BTC    ZCL_TRD_VENDOR_DELIVERY_OU DBSQL_DUPLICATE_KEY_ER ZSD_H_INBOUND_FEEDBACK_ALLOC /usr/sap/AOP/D60/work/dev_w59
+5556    60    78   ?        1.8   4.96G    4.96 S       14d4h            0     13     21      0 WARN     AOP    ?      CL_SALV_BS_RUNTIME_INFO=== MEMORY_NO_MORE_PAGING  ZSD_MN_WH_BILLING_VF04       /usr/sap/AOP/D60/work/dev_w78
+5533    60    55   BTC      1.8   4.87G    4.87 S       14d4h            0     12     12      0 WARN     AOP    BTC    ?                          ?                      ZSD_MN_SOIDMS                /usr/sap/AOP/D60/work/dev_w55
+5551    60    73   ?        0.8   4.87G    4.87 S       14d4h           14      3     11     14 WARN     AOP    ?      ?                          ?                      ZSD_MN_SOIDMS                /usr/sap/AOP/D60/work/dev_w73
+5540    60    62   BTC      0.6   4.86G    4.86 S       14d4h            0      6      5      0 WARN     AOP    BTC    ?                          ?                      ZSD_MN_SOIDMS                /usr/sap/AOP/D60/work/dev_w62
+5538    60    60   BTC      0.3   4.83G    4.83 S       14d4h            0      3      7      0 WARN     AOP    BTC    CORUAFFW                   DBSQL_STMNT_TOO_LARGE  ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D60/work/dev_w60
+
+Running Terlama
+Description : diurutkan berdasarkan AGE (durasi hidup WP), menurun.
+PID     INST  WP   TYPE  CPU(%)     MEM RSS(GB) STATE   AGE          RABAX   SXPG    JOB  RXMSG CLASS    SID    TYPE   ABAP Program               ErrorCode              JobName                      LOG
+5522    60    44   BTC      0.1   4.68G    4.68 S       14d4h            0      1      4      0 WARN     AOP    BTC    ZCL_TRD_VENDOR_DELIVERY_OU DBSQL_DUPLICATE_KEY_ER R_JR_BTCJOBS_GENERATOR       /usr/sap/AOP/D60/work/dev_w44
+5523    60    45   BTC      0.1   3.57G    3.57 S       14d4h           14      1      0     14 WARN     AOP    BTC    ?                          ?                      ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D60/work/dev_w45
+5524    60    46   BTC      0.6   5.69G    5.69 S       14d4h            0      1      5      0 CRIT     AOP    BTC    ?                          ?                      SAPMZMIM_GENR_INBOUNDDEL     /usr/sap/AOP/D60/work/dev_w46
+5525    60    47   BTC      0.7   4.78G    4.78 S       14d4h           14      4      5     14 WARN     AOP    BTC    ?                          ?                      R_JR_BTCJOBS_GENERATOR       /usr/sap/AOP/D60/work/dev_w47
+5526    60    48   BTC      0.1   4.27G    4.27 S       14d4h            0      3      4      0 WARN     AOP    BTC    ?                          ?                      SAPMZMIM_GENR_INBOUNDDEL     /usr/sap/AOP/D60/work/dev_w48
+5527    60    49   BTC      0.3   4.50G    4.50 S       14d4h            0      0      6      0 WARN     AOP    BTC    ?                          ?                      ZSD_H_INB_RETALLOC_POST_API  /usr/sap/AOP/D60/work/dev_w49
+5528    60    50   BTC      0.6   3.41G    3.41 S       14d4h            0      1      4      0 WARN     AOP    BTC    ?                          ?                      RK_PKOSA_MULTI_CREATE        /usr/sap/AOP/D60/work/dev_w50
+5529    60    51   BTC      0.1   3.79G    3.79 S       14d4h            0      1      5      0 WARN     AOP    BTC    ?                          ?                      ZSD_MN_SOIDMS                /usr/sap/AOP/D60/work/dev_w51
+5530    60    52   BTC      0.5   3.98G    3.98 S       14d4h            0      6      4      0 WARN     AOP    BTC    ?                          ?                      ZSD_D_OPN_BIL_AWP            /usr/sap/AOP/D60/work/dev_w52
+5531    60    53   BTC      1.4   4.04G    4.04 S       14d4h           14      2      5     14 WARN     AOP    BTC    ZCL_TRD_VENDOR_DELIVERY_OU DBSQL_DUPLICATE_KEY_ER SAP_ILM_APPL_ARC_JOB_SCHEDUL /usr/sap/AOP/D60/work/dev_w53
+
+RABAX Terbanyak
+Description : diurutkan berdasarkan jumlah RABAX (desc), tiebreak SXPG (desc), JOB (desc).
+PID     INST  WP   TYPE    RABAX   SXPG  RXMSG    JOB CLASS  ABAP Program               ErrorCode              JobName                      LOG
+5566    60    88   ?          66      2      0     38 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D60/work/dev_w88
+5565    60    87   ?          14     33     14     24 WARN   ?                          ?                      ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D60/work/dev_w87
+19708   60    41   BTC        14     25     14      2 WARN   CL_GUI_FRONTEND_SERVICES== RAISE_EXCEPTION        ZSD_MN_SOIDMS                /usr/sap/AOP/D60/work/dev_w41
+5563    60    85   ?          14     11     14     45 WARN   ?                          ?                      ZMM_D_INVCTRL_MTM            /usr/sap/AOP/D60/work/dev_w85
+5541    60    63   BTC        14      6     14      8 WARN   ZFARE_GIRO_CREATE          CONVT_NO_NUMBER        ZSD_MN_SOIDMS                /usr/sap/AOP/D60/work/dev_w63
+5525    60    47   BTC        14      4     14      5 WARN   ?                          ?                      R_JR_BTCJOBS_GENERATOR       /usr/sap/AOP/D60/work/dev_w47
+5551    60    73   ?          14      3     14     11 WARN   ?                          ?                      ZSD_MN_SOIDMS                /usr/sap/AOP/D60/work/dev_w73
+5531    60    53   BTC        14      2     14      5 WARN   ZCL_TRD_VENDOR_DELIVERY_OU DBSQL_DUPLICATE_KEY_ER SAP_ILM_APPL_ARC_JOB_SCHEDUL /usr/sap/AOP/D60/work/dev_w53
+13550   60    89   DIA        14      1     14     49 WARN   ZCL_TRD_VENDOR_DELIVERY_OU DBSQL_DUPLICATE_KEY_ER ZCO_D_ZPPROCONF              /usr/sap/AOP/D60/work/dev_w89
+5523    60    45   BTC        14      1     14      0 WARN   ?                          ?                      ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D60/work/dev_w45
+
+snapshot @ 2026-01-29 16:41:18 WIB
+================================================================================
+Hostname             : AOPH5PAPPDC
+OS                   : SUSE Linux Enterprise Server 15 SP3
+Uptime               : 14 days 4 hours 26 minutes
+vCPU                 : 28
+IP address           : eth0=10.14.55.195
+Logged-in            : 2 user(s), 2 session(s)
+================================================================================
+Metrics:
+  - CPU usage         : 6.04% used, 93.96% idle
+  - Load (15m)        : L15=2.36, vCPU=28, r=0.08 | LA 2.03/2.36/2.36 | Status=OK
+  - Memory            : used 59.2G (48.6%), free 31.8G / 121.8G | Status=OK
+  - Swap IO           : si/so 0/0 p/s | Status=OK
+  - Total WP Running : 1
+  - Total WP Standby : 130
+  - Total WP Critical: 0
+  - Total WP OK      : 65
+  - Total WP Dialog  : 26
+  - Total WP BTC     : 26
+  - Total WP UPD     : 3
+================================================================================
+
+## WP-SCOUT @ AOPH5PAPPDC  SID=AOP  INSTS=70  TS=2026-01-29 16:41:28 WIB
+
+CPU Tertinggi
+Description : diurutkan berdasarkan CPU(%), menurun; tiebreak: RSS(GB) & AGE.
+PID     INST  WP   TYPE  CPU(%)     MEM RSS(GB) STATE   AGE          RABAX   SXPG    JOB  RXMSG CLASS    SID    TYPE   ABAP Program               ErrorCode              JobName                      LOG
+29366   70    64   BTC      7.8   3.85G    3.85 S       13d10h           0      1      1      0 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZBAS_D_OUT_API_IAM_SAP_LOGIN /usr/sap/AOP/D70/work/dev_w64
+6495    70    111  DIA      5.6   1.87G    1.87 S       31m              0      2      0      0 OK       AOP    DIA    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_H_UPLOAD_B2B_DS          /usr/sap/AOP/D70/work/dev_w111
+22672   70    31   ?        4.1   1.63G    1.63 S       4m               0      0      0      0 OK       AOP    ?      /SPE/SAPLCROSS_DLVRY_HU    POSTING_ILLEGAL_STATEM ?                            /usr/sap/AOP/D70/work/dev_w31
+5299    70    82   ?        3.4   3.63G    3.63 S       14d4h           14     56      1     14 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w82
+5302    70    85   ?        3.4   3.43G    3.43 S       14d4h           14     26      0     14 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w85
+5308    70    91   ?        3.3   3.80G    3.80 S       14d4h           28     26      4     28 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_H_INBOUND_FEEDBACK_ALLOC /usr/sap/AOP/D70/work/dev_w91
+5293    70    76   ?        3.0   3.26G    3.26 S       14d4h            0     66      0      0 WARN     AOP    ?      ZVSLI_PAYMENT_REQUEST      CALL_FUNCTION_CONFLICT ZSD_MN_SOIDMS                /usr/sap/AOP/D70/work/dev_w76
+5303    70    86   ?        3.0   4.97G    4.97 S       14d4h           28     34      6     28 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w86
+5306    70    89   ?        2.9   3.53G    3.53 S       14d4h           14      3      0     14 WARN     AOP    ?      ?                          ?                      ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w89
+5304    70    87   ?        2.8   3.35G    3.35 S       14d4h           42     30      0     42 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w87
+
+Memory Tertinggi (RSS)
+Description : diurutkan berdasarkan RSS(GB), menurun; tiebreak: CPU(%).
+PID     INST  WP   TYPE  CPU(%)     MEM RSS(GB) STATE   AGE          RABAX   SXPG    JOB  RXMSG CLASS    SID    TYPE   ABAP Program               ErrorCode              JobName                      LOG
+5271    70    54   BTC      2.0   5.23G    5.23 S       14d4h            0     25      2      0 WARN     AOP    BTC    ZLOBE_AFTER_CONFIRM        DBSQL_SQL_DEADLOCK_DET ZSD_D_INT_MRS_SLS_SND        /usr/sap/AOP/D70/work/dev_w54
+5303    70    86   ?        3.0   4.97G    4.97 S       14d4h           28     34      6     28 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w86
+5291    70    74   ?        1.5   4.90G    4.90 S       14d4h           28     11      0     28 WARN     AOP    ?      ZVCMR_H2H_CREDIT_LIMIT     IMPORT_WRONG_END_POS   ZSD_H_INBOUND_FEEDBACK_ALLOC /usr/sap/AOP/D70/work/dev_w74
+5263    70    46   BTC      0.9   4.87G    4.87 S       14d4h            0      1      0      0 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w46
+5289    70    72   ?        2.3   4.75G    4.75 S       14d4h            0     25      0      0 WARN     AOP    ?      ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w72
+10628   70    63   BTC      1.0   4.47G    4.47 S       10d4h           28     32      0     28 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w63
+20860   70    57   BTC      1.2   4.42G    4.42 S       13d21h           0     34      3      0 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZPP_D_NM_OUTBOUND_GR_S       /usr/sap/AOP/D70/work/dev_w57
+30077   70    108  DIA      1.2   4.42G    4.42 S       9h27m            0      1      0      0 WARN     AOP    DIA    SAPLORFC                   CALL_FUNCTION_SEND_ERR ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w108
+7510    70    117  DIA      2.5   4.38G    4.38 S       2h28m            0      0      0      0 WARN     AOP    DIA    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER SAPMZMIM_GENR_INBOUNDDEL     /usr/sap/AOP/D70/work/dev_w117
+27071   70    23   ?        0.3   4.07G    4.07 S       1d5h             0      0      0      0 WARN     AOP    ?      SAPMZMIM_GENR_INBOUNDDEL2  STRING_LENGTH_TOO_LARG ?                            /usr/sap/AOP/D70/work/dev_w23
+
+Running Terlama
+Description : diurutkan berdasarkan AGE (durasi hidup WP), menurun.
+PID     INST  WP   TYPE  CPU(%)     MEM RSS(GB) STATE   AGE          RABAX   SXPG    JOB  RXMSG CLASS    SID    TYPE   ABAP Program               ErrorCode              JobName                      LOG
+5256    70    39   BTC      0.6   3.47G    3.47 S       14d4h            0      3      0      0 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZBAS_D_OUT_API_IAM_SAP_LOGIN /usr/sap/AOP/D70/work/dev_w39
+5257    70    40   BTC      0.0   2.97G    2.97 S       14d4h            0     25      0      0 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZBAS_D_OUT_API_IAM_SAP_LOGIN /usr/sap/AOP/D70/work/dev_w40
+5258    70    41   BTC      0.1   3.36G    3.36 S       14d4h            0     25      0      0 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZBAS_D_OUT_API_IAM_SAP_LOGIN /usr/sap/AOP/D70/work/dev_w41
+5259    70    42   BTC      0.0   3.28G    3.28 S       14d4h           14      0      0     14 WARN     AOP    BTC    ?                          ?                      ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w42
+5260    70    43   BTC      0.2   3.46G    3.46 S       14d4h            0     28      0      0 WARN     AOP    BTC    ?                          ?                      /IWFND/NOTIFICATION_CLEANUP  /usr/sap/AOP/D70/work/dev_w43
+5261    70    44   BTC      0.2   3.27G    3.27 S       14d4h            0      2      0      0 WARN     AOP    BTC    ?                          ?                      ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w44
+5262    70    45   BTC      0.9   3.31G    3.31 S       14d4h            0      4      0      0 WARN     AOP    BTC    ?                          ?                      ZSD_H_INBOUND_FEEDBACK_ALLOC /usr/sap/AOP/D70/work/dev_w45
+5263    70    46   BTC      0.9   4.87G    4.87 S       14d4h            0      1      0      0 WARN     AOP    BTC    ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w46
+5265    70    48   BTC      0.6   3.65G    3.65 S       14d4h            0     53      0      0 WARN     AOP    BTC    ?                          ?                      ZSD_MN_INBOUND_CUS_B2C       /usr/sap/AOP/D70/work/dev_w48
+5266    70    49   BTC      0.7   3.19G    3.19 S       14d4h            0      3      0      0 WARN     AOP    BTC    ?                          ?                      ZSD_AD_AOE_BILL_DOM          /usr/sap/AOP/D70/work/dev_w49
+
+RABAX Terbanyak
+Description : diurutkan berdasarkan jumlah RABAX (desc), tiebreak SXPG (desc), JOB (desc).
+PID     INST  WP   TYPE    RABAX   SXPG  RXMSG    JOB CLASS  ABAP Program               ErrorCode              JobName                      LOG
+5283    70    66   ?          85      0      0      0 WARN   SAPLCOFW                   MESSAGE_TYPE_X         ?                            /usr/sap/AOP/D70/work/dev_w66
+5307    70    90   ?          44     11     44      2 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_MN_SOIDMS                /usr/sap/AOP/D70/work/dev_w90
+5304    70    87   ?          42     30     42      0 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w87
+20372   70    59   BTC        42      6     42      0 OK     /SPE/SAPLCROSS_DLVRY_HU    POSTING_ILLEGAL_STATEM ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w59
+5303    70    86   ?          28     34     28      6 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w86
+10628   70    63   BTC        28     32     28      0 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w63
+5308    70    91   ?          28     26     28      4 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZSD_H_INBOUND_FEEDBACK_ALLOC /usr/sap/AOP/D70/work/dev_w91
+5295    70    78   ?          28     14     28      1 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZEWM_MN_OUTBOUND_APT_SAP_DMO /usr/sap/AOP/D70/work/dev_w78
+5291    70    74   ?          28     11     28      0 WARN   ZVCMR_H2H_CREDIT_LIMIT     IMPORT_WRONG_END_POS   ZSD_H_INBOUND_FEEDBACK_ALLOC /usr/sap/AOP/D70/work/dev_w74
+5301    70    84   ?          19     43     19      0 WARN   ZCL_ZCA_REST_OUTBOUND_LOG= DBSQL_DUPLICATE_KEY_ER ZMM_D_ERP_OUTBND_GRPO_0103   /usr/sap/AOP/D70/work/dev_w84
+
